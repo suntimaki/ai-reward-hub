@@ -1,14 +1,17 @@
-AI Reward Hub PWA
+AI Reward Hub V3
 
-วิธีใช้งานบน iPhone:
-1. อัปโหลดไฟล์ทั้งหมดในโฟลเดอร์นี้ขึ้น static hosting เช่น Netlify Drop, GitHub Pages, Cloudflare Pages หรือ Vercel
-2. เปิด URL ที่ได้ด้วย Safari
-3. กด Share > Add to Home Screen
-4. เปิดจากไอคอนบน Home Screen
+Changes:
+- Fixed account creation flow.
+- Add/edit/delete individual accounts.
+- Bulk add Gmail addresses per website.
+- Quick Google Account Chooser button.
+- Open AI website per account.
+- Kira, Unlucid and A2E presets included.
+- Keeps the same localStorage key as V1/V2 so existing data can continue to load.
+- Does NOT store Gmail passwords, Google cookies, OAuth tokens, or external website sessions.
 
-ข้อมูลเว็บ / account / claim history จะเก็บใน localStorage ของโดเมนนั้น
-อย่าล้าง Website Data ของ Safari ถ้ายังไม่ได้ Export backup
-
-หมายเหตุ:
-- แอปนี้ไม่เก็บ password
-- ไม่ข้าม CAPTCHA, anti-bot หรือข้อจำกัด IP ของเว็บภายนอก
+Mobile usage:
+1. Upload all files to the same Cloudflare Pages project/domain.
+2. Open the same pages.dev URL.
+3. If the old UI is cached, close the PWA/tab and reopen once.
+4. Log into Google accounts in Safari/Chrome normally. Reward Hub only stores email labels and claim status.
